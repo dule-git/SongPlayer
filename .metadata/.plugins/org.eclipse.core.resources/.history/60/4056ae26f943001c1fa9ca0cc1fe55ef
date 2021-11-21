@@ -1,0 +1,38 @@
+/*
+ * SongPlayer.cpp
+ *
+ *  Created on: Nov 12, 2021
+ *      Author: dusan
+ */
+
+#include "main.h"
+#include "SongPlayer.h"
+#include "AT45DB161D.hpp"
+#include "Song.h"
+
+SongPlayer::SongPlayer():
+	song(nullptr)
+{
+
+}
+
+SongPlayer::~SongPlayer()
+{
+
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	SongPlayer::Signal();
+}
+
+void SongPlayer::Play(Song* song, TIM_HandleTypeDef* htim)
+{
+	HAL_TIM_Base_Start_IT(htim);
+	HAL_TIM_PWM_Start_IT(htim, TIM_CHANNEL_1);
+
+	for (uint32_t i = 0; i < song->GetSize(); i++)
+	{
+
+	}
+}

@@ -1,0 +1,44 @@
+/*
+ * Song.cpp
+ *
+ *  Created on: Nov 12, 2021
+ *      Author: dusan
+ */
+
+#include "Song.h"
+#include "AT45DB161D.hpp"
+
+Song::Song():
+	flash(nullptr)
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+Song::~Song() {
+	// TODO Auto-generated destructor stub
+}
+
+uint32_t extractSize(uint8_t * songInfo)
+{
+	uint32_t size = 0;
+	size |= songInfo[0] << 24;
+	size |= songInfo[1] << 16;
+	size |= songInfo[2] << 8;
+	size |= songInfo[3];
+
+	return size;
+}
+
+void Song::Load(AT45DB161D* flash)
+{
+	if (this->flash != nullptr)
+		delete flash;
+
+	this->flash = flash;
+
+	uint8_t* songInfo;
+	this->flash->main_mem_page_read(0, 0, songInfo, 528*sizeof(uint8_t));
+
+	this->size = extractSize(songInfo);
+}

@@ -1,0 +1,18 @@
+/*
+ * Song.cpp
+ *
+ *  Created on: Nov 12, 2021
+ *      Author: dusan
+ */
+
+#include "Song.h"
+
+Song::Song() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Song::~Song() {
+	// TODO Auto-generated destructor stub
+}
+

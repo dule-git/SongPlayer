@@ -1,0 +1,20 @@
+/*
+ * SongPlayer.h
+ *
+ *  Created on: Nov 12, 2021
+ *      Author: dusan
+ */
+
+#ifndef SONGPLAYER_H_
+#define SONGPLAYER_H_
+
+class AT45DB161D;
+
+class SongPlayer {
+public:
+	SongPlayer();
+	virtual ~SongPlayer();
+	void LoadSong(AT45DB161D* flash);
+};
+
+#endif /* SONGPLAYER_H_ */

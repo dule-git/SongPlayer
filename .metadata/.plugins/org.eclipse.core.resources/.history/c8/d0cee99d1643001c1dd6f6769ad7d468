@@ -1,0 +1,18 @@
+/*
+ * FlashProgramator.cpp
+ *
+ *  Created on: Nov 11, 2021
+ *      Author: dusan
+ */
+
+#include "FlashProgramator.h"
+
+FlashProgramator::FlashProgramator() {
+	// TODO Auto-generated constructor stub
+
+}
+
+FlashProgramator::~FlashProgramator() {
+	// TODO Auto-generated destructor stub
+}
+

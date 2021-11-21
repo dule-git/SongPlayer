@@ -1,0 +1,5 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+FlashProgramator.cpp:14:1:FlashProgramator::FlashProgramator()	16	static
+FlashProgramator.cpp:20:1:FlashProgramator::~FlashProgramator()	16	static
+FlashProgramator.cpp:20:1:virtual FlashProgramator::~FlashProgramator()	16	static
+FlashProgramator.cpp:24:6:void FlashProgramator::Program(AT45DB161D*, UART_HandleTypeDef*)	584	static

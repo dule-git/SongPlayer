@@ -1,0 +1,17 @@
+/*
+ * SongPlayer.h
+ *
+ *  Created on: Nov 12, 2021
+ *      Author: dusan
+ */
+
+#ifndef SONGPLAYER_H_
+#define SONGPLAYER_H_
+
+class SongPlayer {
+public:
+	SongPlayer();
+	virtual ~SongPlayer();
+};
+
+#endif /* SONGPLAYER_H_ */

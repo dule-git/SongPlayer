@@ -1,0 +1,10 @@
+22:21:02 **** Incremental Build of configuration Debug for project HP_CPP ****
+make -j4 all 
+arm-none-eabi-size   HP_CPP.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17584	    120	   2368	  20072	   4e68	HP_CPP.elf
+Finished building: default.size.stdout
+ 
+
+22:21:02 Build Finished. 0 errors, 0 warnings. (took 470ms)
+

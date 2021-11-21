@@ -1,0 +1,29 @@
+/*
+ * Song.cpp
+ *
+ *  Created on: Nov 12, 2021
+ *      Author: dusan
+ */
+
+#include "Song.h"
+#include "AT45DB161D.hpp"
+
+Song::Song():
+	flash(nullptr)
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+Song::~Song() {
+	// TODO Auto-generated destructor stub
+}
+
+void Song::Load(AT45DB161D* flash)
+{
+	if (this->flash != nullptr)
+		delete flash;
+
+	this->flash = flash;
+
+}

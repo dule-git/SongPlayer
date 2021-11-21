@@ -1,0 +1,17 @@
+/*
+ * FlashProgramator.h
+ *
+ *  Created on: Nov 11, 2021
+ *      Author: dusan
+ */
+
+#ifndef SRC_FLASHPROGRAMATOR_H_
+#define SRC_FLASHPROGRAMATOR_H_
+
+class FlashProgramator {
+public:
+	FlashProgramator();
+	virtual ~FlashProgramator();
+};
+
+#endif /* SRC_FLASHPROGRAMATOR_H_ */

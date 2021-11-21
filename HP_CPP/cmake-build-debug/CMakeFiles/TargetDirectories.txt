@@ -1,0 +1,3 @@
+C:/Users/dusan/STM32CubeIDE/workspace_1.6.1/HP_CPP/cmake-build-debug/CMakeFiles/HP_CPP.elf.dir
+C:/Users/dusan/STM32CubeIDE/workspace_1.6.1/HP_CPP/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/dusan/STM32CubeIDE/workspace_1.6.1/HP_CPP/cmake-build-debug/CMakeFiles/rebuild_cache.dir

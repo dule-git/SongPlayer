@@ -1,0 +1,34 @@
+/*
+ * FlashProgramator.cpp
+ *
+ *  Created on: Nov 11, 2021
+ *      Author: dusan
+ */
+
+#include "main.h"
+#include "FlashProgramator.h"
+
+#include <exception>
+
+FlashProgramator::FlashProgramator()
+{
+
+
+}
+
+FlashProgramator::~FlashProgramator() {
+	// TODO Auto-generated destructor stub
+}
+
+void FlashProgramator::Program(AT45DB161D* flash, UART_HandleTypeDef* huart)
+{
+	uint8_t data[528];
+	while (true)
+	{
+		if (HAL_UART_Receive(huart, data, 528*sizeof(uint8_t), 500) != HAL_OK)
+		{
+
+		}
+	}
+}
+

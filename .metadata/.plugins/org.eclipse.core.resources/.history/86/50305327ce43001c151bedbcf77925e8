@@ -1,0 +1,18 @@
+/*
+ * SongPlayer.cpp
+ *
+ *  Created on: Nov 12, 2021
+ *      Author: dusan
+ */
+
+#include "SongPlayer.h"
+
+SongPlayer::SongPlayer() {
+
+
+}
+
+SongPlayer::~SongPlayer() {
+	// TODO Auto-generated destructor stub
+}
+

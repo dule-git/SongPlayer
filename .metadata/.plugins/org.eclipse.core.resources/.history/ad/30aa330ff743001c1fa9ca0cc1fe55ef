@@ -1,0 +1,31 @@
+/*
+ * SongPlayer.cpp
+ *
+ *  Created on: Nov 12, 2021
+ *      Author: dusan
+ */
+
+#include "main.h"
+#include "SongPlayer.h"
+#include "AT45DB161D.hpp"
+#include "Song.h"
+
+SongPlayer::SongPlayer():
+	song(nullptr)
+{
+
+}
+
+SongPlayer::~SongPlayer()
+{
+
+}
+
+
+void SongPlayer::Play(Song* song, TIM_HandleTypeDef* tim)
+{
+	for (uint32_t i = 0; i < song->GetSize(); i++)
+	{
+
+	}
+}

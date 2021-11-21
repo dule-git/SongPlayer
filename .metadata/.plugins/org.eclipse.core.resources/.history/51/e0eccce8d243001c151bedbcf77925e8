@@ -1,0 +1,23 @@
+/*
+ * Song.h
+ *
+ *  Created on: Nov 12, 2021
+ *      Author: dusan
+ */
+
+#ifndef SRC_SONG_H_
+#define SRC_SONG_H_
+
+class AT45DB161D;
+
+class Song {
+public:
+	Song();
+	virtual ~Song();
+	void Load();
+private:
+	uint32_t size; // size in blocks of 528 bytes
+	AT45DB161D* flash;
+};
+
+#endif /* SRC_SONG_H_ */

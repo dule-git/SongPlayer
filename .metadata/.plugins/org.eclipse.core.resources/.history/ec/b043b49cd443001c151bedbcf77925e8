@@ -1,0 +1,30 @@
+/*
+ * SongPlayer.cpp
+ *
+ *  Created on: Nov 12, 2021
+ *      Author: dusan
+ */
+
+#include "SongPlayer.h"
+#include "AT45DB161D.hpp"
+#include "Song.h"
+
+SongPlayer::SongPlayer():
+	song(nullptr)
+{
+
+}
+
+SongPlayer::~SongPlayer()
+{
+
+}
+
+
+void SongPlayer::LoadSong(AT45DB161D* flash)
+{
+	if (song != nullptr)
+		delete song;
+
+	song->Load(flash);
+}
